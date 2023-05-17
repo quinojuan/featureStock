@@ -51,7 +51,7 @@ function App() {
             <pre>
               {jsonData.map((product, index) => (
                 <div className="product" key={index}>
-                  {product.slice(0,3).map((item, idx) => (
+                  {product.slice(0,4).map((item, idx) => (
                     <span key={idx}>{item} </span>
                   ))}
                 </div>
