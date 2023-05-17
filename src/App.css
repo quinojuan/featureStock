@@ -19,6 +19,7 @@
 }
 
 .product {
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -34,7 +35,7 @@
 }
 
 .items {
-  font-size: 1.1rem;
+  font-size: 1.1em;
 }
 
 .pesos {
