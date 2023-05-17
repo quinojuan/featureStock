@@ -21,6 +21,12 @@
 .product {
   margin: 0 auto;
 }
+
+.title {
+  text-align: center;
+  color: blueviolet;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

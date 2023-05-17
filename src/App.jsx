@@ -36,6 +36,7 @@ function App() {
 
   return (
     <div>
+      <h1 className="title">HABÍA UNA VEZ</h1>
       <input
         type="text"
         placeholder=""
