@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import XLSX from "xlsx/dist/xlsx.full.min.js";
-import "./App.css"
+import "./App.css";
 
 function App() {
   const [jsonData, setJsonData] = useState(null);
@@ -23,7 +23,7 @@ function App() {
         });
 
         setJsonData(filteredData);
-        console.log(jsonData)
+        console.log(jsonData);
       })
       .catch((error) => {
         console.error("Error al cargar el archivo:", error);
@@ -38,6 +38,7 @@ function App() {
     <div>
       <h1 className="title">HABÍA UNA VEZ</h1>
       <input
+        className="code"
         type="text"
         placeholder=""
         value={searchTerm}
@@ -51,8 +52,10 @@ function App() {
             <pre>
               {jsonData.map((product, index) => (
                 <div className="product" key={index}>
-                  {product.slice(0,4).map((item, idx) => (
-                    <span key={idx}>{item} </span>
+                  {product.slice(0, 4).map((item, idx) => (
+                    <span className="items" key={idx}>
+                      {item}{" "}
+                    </span>
                   ))}
                 </div>
               ))}
